@@ -24,4 +24,11 @@ int main()
         // menulis dan memasukan nilai dari 'baris' ke dalam file 
         outfile << baris << endl;
     }
+    // selesai dalam menulis sekarang tutup
+    outfile.close();
+
+    // membuka file dalam mode mmebaca
+    istream infile;
+    // menunjuk ke sebuah file
+    infile.open("contohfile.txt");
 }
